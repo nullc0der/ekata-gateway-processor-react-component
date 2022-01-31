@@ -1,5 +1,5 @@
 export interface FormConfigData {
-  isTestnet: boolean;
+  isTestnet?: boolean;
   projectID: string;
   onCloseForm: (reason: string) => void;
   onError: (payload: any) => void;
