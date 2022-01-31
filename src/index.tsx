@@ -25,7 +25,7 @@ class GatewayProcessorForm extends React.Component<
   gpForm: GatewayProcessorFormLoader;
   state: GatewayProcessorFormState = {
     formConfig: {
-      isTestnet: false,
+      isTestnet: this.props.isTestnet || false,
       projectID: this.props.projectID,
       onError: data => this.props.onError(data),
       onCloseForm: reason => this.props.onCloseForm(reason),
