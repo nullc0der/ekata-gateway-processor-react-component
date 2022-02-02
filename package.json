@@ -1,60 +1,65 @@
 {
-  "version": "1.0.6",
-  "private": false,
-  "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "engines": {
-    "node": ">=10"
-  },
-  "scripts": {
-    "build": "tsdx build",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
-  },
-  "peerDependencies": {
-    "react": ">=16"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "name": "@ekataio/gateway-processor-form-react",
-  "author": "EkataIO Wizard",
-  "module": "dist/gateway-processor-form-react.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/gateway-processor-form-react.cjs.production.min.js",
-      "limit": "10 KB"
+    "version": "1.0.8",
+    "private": false,
+    "license": "MIT",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "engines": {
+        "node": ">=10"
     },
-    {
-      "path": "dist/gateway-processor-form-react.esm.js",
-      "limit": "10 KB"
-    }
-  ],
-  "devDependencies": {
-    "@size-limit/preset-small-lib": "^7.0.5",
-    "@types/react": "^17.0.38",
-    "@types/react-dom": "^17.0.11",
-    "husky": "^7.0.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "size-limit": "^7.0.5",
-    "tsdx": "^0.14.1",
-    "tslib": "^2.3.1",
-    "typescript": "^4.5.5"
-  }
+    "scripts": {
+        "build": "tsdx build",
+        "lint": "tsdx lint",
+        "prepare": "tsdx build",
+        "size": "size-limit",
+        "analyze": "size-limit --why"
+    },
+    "peerDependencies": {
+        "react": ">=16"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "tsdx lint"
+        }
+    },
+    "name": "@ekataio/gateway-processor-form-react",
+    "author": "EkataIO Wizard",
+    "module": "dist/gateway-processor-form-react.esm.js",
+    "size-limit": [
+        {
+            "path": "dist/gateway-processor-form-react.cjs.production.min.js",
+            "limit": "10 KB"
+        },
+        {
+            "path": "dist/gateway-processor-form-react.esm.js",
+            "limit": "10 KB"
+        }
+    ],
+    "devDependencies": {
+        "@size-limit/preset-small-lib": "^7.0.5",
+        "@types/react": "^17.0.38",
+        "@types/react-dom": "^17.0.11",
+        "husky": "^7.0.4",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "size-limit": "^7.0.5",
+        "tsdx": "^0.14.1",
+        "tslib": "^2.3.1",
+        "typescript": "^4.5.5"
+    },
+    "keywords": [
+        "payment",
+        "crypto",
+        "processor",
+        "gateway",
+        "btc",
+        "xmr",
+        "doge"
+    ],
+    "homepage": "https://ekata.io",
+    "repository": "https://gitlab.ekata.io/ekata-io-projects/ekata-gateway-processor-react-component"
 }
